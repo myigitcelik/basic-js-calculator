@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="calc">
+                <form>
+                    <div class="goruntuleme">
+                        <input type="text" name="goruntuleme">
+                    </div>
+                    <div>
+                        <input type="button" value="AC" onclick="goruntuleme.value = '' ">
+                        <input type="button" value="DE" onclick="goruntuleme.value = goruntuleme.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="goruntuleme.value += '.' ">
+                        <input type="button" value="/" onclick="goruntuleme.value += '/' ">
+                    </div>
+                    <div>
+                        <input type="button" value="7" onclick="goruntuleme.value += '7' ">
+                        <input type="button" value="8" onclick="goruntuleme.value += '8' ">
+                        <input type="button" value="9" onclick="goruntuleme.value += '9' ">
+                        <input type="button" value="*" onclick="goruntuleme.value += '*' ">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onclick="goruntuleme.value += '4' ">
+                        <input type="button" value="5" onclick="goruntuleme.value += '5' ">
+                        <input type="button" value="6" onclick="goruntuleme.value += '6' ">
+                        <input type="button" value="-" onclick="goruntuleme.value += '-' ">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onclick="goruntuleme.value += '1' ">
+                        <input type="button" value="2" onclick="goruntuleme.value += '2' ">
+                        <input type="button" value="3" onclick="goruntuleme.value += '3' ">
+                        <input type="button" value="+" onclick="goruntuleme.value += '+' ">
+                    </div>
+                    <div>
+                        <input type="button" value="00" onclick="goruntuleme.value += '00' ">
+                        <input type="button" value="0" onclick="goruntuleme.value += '0' ">
+                        <input type="button" class="esittir" onclick="goruntuleme.value = eval(goruntuleme.value)" value="=">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script>
+     
+    </script>
+</hmtl>
